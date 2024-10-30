@@ -1,0 +1,97 @@
+/* 
+ *	Front-end plugin CSS
+ *
+ *		The CSS is intentionally over-specific to eliminate and override
+ *		theme-related styles that may interfere with the widget. Feel free
+ *		to remove, edit or tweak the CSS as needed for your theme.
+ *
+ */
+
+
+/* Plugin element specific reset */
+#cudazi-latest-tweets,
+#cudazi-latest-tweets ul,
+#cudazi-latest-tweets ul ul.tweet_list,
+#main #cudazi-latest-tweets ul.tweet_list,
+#cudazi-latest-tweets li,
+#cudazi-latest-tweets a,
+#cudazi-latest-tweets a:hover, 
+#cudazi-latest-tweets h3,
+#cudazi-latest-tweets div,
+#cudazi-latest-tweets span,
+#cudazi-latest-tweets, 
+.cudazi-latest-tweets {
+	margin: 0;
+	padding: 0;
+	background: none;
+	border: 0;
+	color: #444;
+	font-weight: normal;
+	font-size: 12px;
+	font-family: Helvetica, Arial, serif;
+	letter-spacing: normal;
+}
+
+/* Widget Title */
+#cudazi-latest-tweets h3 {
+
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0 0 15px 0;
+}
+
+/* Widget Link */
+#cudazi-latest-tweets a {
+	text-decoration: none;
+	color: #111;
+}
+
+/* Widget Link Hover */
+#cudazi-latest-tweets a:hover {
+	text-decoration: underline;
+}
+
+/* Widget Time Link */
+#cudazi-latest-tweets .tweet_time a { 
+	color: #555;
+	display: block;
+	font-size: 10px;
+	margin-top: 6px;
+	font-style: italic;
+	text-transform: capitalize;
+}
+
+/* Widget UL, remove bullets */
+#cudazi-latest-tweets ul {
+	list-style-type: none;
+}
+
+/* Widget list item container */
+#cudazi-latest-tweets li {
+	-webkit-border-radius: 5px;
+	-moz-border-radius:	5px;
+	border-radius:	5px;	
+	position: relative;
+	padding: 10px 12px;
+	margin: 0 0 30px 0;
+	background: #bbb;	
+}
+
+/* Widget list item triangle piece below container */
+#cudazi-latest-tweets li:after {	
+	position: absolute;
+	bottom: -10px;
+	left: 20px;
+	border-width: 10px 10px 0;
+	border-style: solid;
+	border-color: #bbb transparent;
+    display: block; 
+    width: 0;
+    content: "";
+}
+
+/* Style specific tweets from auto-generated classes (jQuery) */
+#cudazi-latest-tweets .tweet_first { /* first tweet */ }
+#cudazi-latest-tweets .tweet_even { /* even numbered tweets */ }
+#cudazi-latest-tweets .tweet_odd { /* odd numbered tweets */ }
+
